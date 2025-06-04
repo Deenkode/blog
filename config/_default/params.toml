@@ -77,7 +77,7 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "disqus"
+provider = "vssue"
 
 [comments.disqusjs]
 shortname = ""
@@ -97,12 +97,12 @@ site = ""
 locale = ""
 
 [comments.vssue]
-platform = ""
-owner = ""
-repo = ""
-clientId = ""
-clientSecret = ""
-autoCreateIssue = false
+platform = "github"
+owner = "deenkode"
+repo = "blog"
+clientId = "Ov23lio8Qnp2X5NGTmUV"
+clientSecret = "46d883f364409c2ffc3551142daa423f10cfacec"
+autoCreateIssue = true
 
 [comments.waline]
 serverURL = ""
