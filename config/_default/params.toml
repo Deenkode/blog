@@ -98,11 +98,11 @@ locale = ""
 
 [comments.vssue]
 platform = "github"
-owner = "deenkode"
+owner = "Deenkode"
 repo = "blog"
 clientId = "Ov23lio8Qnp2X5NGTmUV"
 clientSecret = "46d883f364409c2ffc3551142daa423f10cfacec"
-autoCreateIssue = true
+autoCreateIssue = false
 
 [comments.waline]
 serverURL = ""
