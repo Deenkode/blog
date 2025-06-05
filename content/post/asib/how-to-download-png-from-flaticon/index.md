@@ -1,6 +1,7 @@
 ---
 title: "কীভাবে flaticon থেকে png ডাউনলোড করতে হয়?"
 date: 2025-06-05
+image: image.png
 description: "flaticon থেকে ঝামেলা ছাড়াই যেকোনো png ডাউনলোড করুন।"
 tags:
     - flaticon
