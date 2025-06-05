@@ -1,7 +1,13 @@
-# Deenkode: Bangladesh Tech Enthusiast Community Blog
+# Deenkode Blog
 
+Bangladesh Tech Enthusiast Community Blog
 
-![Deenkode Banner Placeholder](https://via.placeholder.com/1200x300?text=Deenkode+Community+Blog)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Deenkode/designs/refs/heads/main/logo/svg/Deenkode-logo-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Deenkode/designs/refs/heads/main/logo/svg/Deenkode-logo-light.svg">
+  <img alt="" src="https://raw.githubusercontent.com/Deenkode/designs/refs/heads/main/logo/svg/Deenkode-logo-light.svg">
+</picture>
+
 
 Welcome to the official repository for the **Deenkode: Bangladesh Tech Enthusiast Community Blog**! This project is a core part of the larger [Deenkode Organization](https://github.com/Deenkode) which aims to foster innovation and collaboration within the Bangladeshi tech ecosystem.
 
@@ -52,8 +58,8 @@ If you're looking to contribute to the development of the blog platform itself (
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Deenkode/community-blog.git](https://github.com/Deenkode/community-blog.git)
-    cd community-blog
+    git clone [https://github.com/Deenkode/blog.git](https://github.com/Deenkode/blog.git)
+    cd blog
     ```
 
 2.  **Initialize and Update Submodules (for the Stack Theme):**
@@ -72,12 +78,5 @@ If you're looking to contribute to the development of the blog platform itself (
 
 ### Adding New Content
 
-To create a new post:
-```bash
-hugo new posts/<your-post-title-here>.md
-
-Have questions or want to get involved?
-
-    Email: contact@deenkode.org
-    Organization Website: www.deenkode.org (Coming soon!)
-    Social Media: [Link to Facebook], [Link to LinkedIn], etc.
+To create a new post, follow the article,
+- https://deenkode.github.io/blog/p/how-to-post/
