@@ -3,10 +3,11 @@ title: "কিভাবে অতি সহজে টেইলওয়াইন্
 date: 2025-06-05
 image: cover.jpg
 description: "অতি সহজে কোনো ঝামেলা ছাড়াই আপনার রিয়েক্ট অথবা নেক্সট জেএস প্রজেক্টে টেইলওয়াইন্ড ভার্শন 4 ইন্সটল করুন।"
+author: "Asad"
 tags:
     - tailwindcss
 categories:
-    - Asad
+    - Tutorial
 ---
 
 ## ভুমিকা
