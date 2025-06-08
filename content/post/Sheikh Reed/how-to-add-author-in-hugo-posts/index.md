@@ -1,6 +1,6 @@
 ---
 title: "How to Add Author in Hugo Posts"
-image: /thumbnail/how-to-add-author-in-hugo-posts.png
+image: how-to-add-author-in-hugo-posts.png
 date: 2025-06-08T13:06:02+06:00
 author: "Sheikh Reed"
 categories:
