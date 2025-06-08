@@ -3,6 +3,7 @@ title: Markdown Syntax Guide
 date: 2023-09-07
 image: cover.jpg
 description: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
+author: Admin
 tags: 
     - markdown
     - css
@@ -10,12 +11,18 @@ tags:
     - themes
     - syntax
 categories:
-    - admin
+    - themes
+    - syntax
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 
 <!--more-->
+
+To learn with codes, you can also follow the following URLS,
+
+- <https://www.markdownguide.org/basic-syntax/>
+- <https://sharafat.pages.dev/markdown/>
 
 ## Headings
 
