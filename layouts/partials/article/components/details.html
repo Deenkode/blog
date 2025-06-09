@@ -29,17 +29,39 @@
 
     {{ if $showFooter }}
     <footer class="article-time">
-        {{ if $showDate }}
-            <div>
-                {{ partial "helper/icon" "user" }}
-                <span class="article-author">
-                    {{ with .Params.author }}
-                        {{ . }}
-                    {{ else }}
-                        {{ .Site.Params.author }}
-                    {{ end }}
-                </span>
-            </div>
+          {{ if $showDate }}
+  <div>
+    <!-- custom Author avater -->
+     <!-- place your author.png avater inside assets/images/img/authors/[authorname]/ -->
+    {{ $author := "" }}
+    {{ with .Params.author }}
+        {{ $author = . }}
+    {{ else }}
+        {{ $author = .Site.Params.author }}
+    {{ end }}
+
+    {{ if $author }}
+        {{ $authorSlug := urlize $author }}
+        
+        {{ $assetPath := printf "images/img/authors/%s/author.png" $authorSlug }}
+        
+        {{ with resources.Get $assetPath }}
+            <img src="{{ .Permalink }}" alt="{{ $author }}" class="author-icon"  style="width: 48px; height: 48px; object-fit: cover; border-radius: 50%; vertical-align: middle; margin-right: 8px;" />
+        {{ else }}
+            {{ partial "helper/icon" "user" }}
+        {{ end }}
+    {{ else }}
+        {{ partial "helper/icon" "user" }}
+    {{ end }}
+<!-- custom Author avater -->
+    <span class="article-author">
+        {{ with .Params.author }}
+            {{ . }}
+        {{ else }}
+            {{ .Site.Params.author }}
+        {{ end }}
+    </span>
+</div>
             <div>
                 {{ partial "helper/icon" "date" }}
                 <time class="article-time--published">
