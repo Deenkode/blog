@@ -3,10 +3,12 @@ title: "কীভাবে flaticon থেকে png ডাউনলোড ক�
 date: 2025-06-05
 image: image.png
 description: "flaticon থেকে ঝামেলা ছাড়াই যেকোনো png ডাউনলোড করুন।"
+author: "Asib Hossen"
 tags:
     - flaticon
+    - download
 categories:
-    - Asib
+    - Tutorial
 ---
 
 # flaticon কী?
