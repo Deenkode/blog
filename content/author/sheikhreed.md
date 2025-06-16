@@ -1,6 +1,6 @@
 ---
 title: "Sheikh Reed | Deenkode"
 author: "Sheikh Reed"
-url: "/author/sheikhreed/"
+url: "blog/author/sheikhreed/"
 layout: "author"
 ---
