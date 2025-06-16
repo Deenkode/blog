@@ -10,9 +10,9 @@
 
   {{ if $data }}
     <section class="profile-header">
-      <div class="cover" style="background-image: url('{{ $data.cover }}')"></div>
+      <div class="cover" style="background-image: url('{{ $data.cover | relURL }}')"></div>
       <div class="avatar">
-        <img src="{{ $data.avatar }}" alt="{{ $data.name }}">
+        <img src="{{ $data.avatar | relURL }}" alt="{{ $data.name }}">
       </div>
       <div class="info">
         <h1>{{ $data.name }}</h1>
@@ -40,7 +40,7 @@
       {{ range where (where site.RegularPages "Params.author" $inputAuthor) "RelPermalink" "ne" .RelPermalink }}
         <div class="post-card">
           <div class="post-card-header">
-            <img src="{{ $data.avatar }}" alt="Profile" class="profile-pic">
+            <img src="{{ $data.avatar | relURL }}" alt="Profile" class="profile-pic">
             <div class="user-info">
               <h3 class="name">{{ $data.name }}</h3>
               <p class="time">{{ .Date.Format "Jan 2, 2006" }}</p>
