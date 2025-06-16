@@ -1,0 +1,58 @@
+{{ define "main" }}
+<main class="profile">
+  {{ $inputAuthor := .Params.author }}
+  {{ $data := "" }}
+  {{ range $key, $val := site.Data.authors }}
+    {{ if eq (lower $val.name) (lower $inputAuthor) }}
+      {{ $data = $val }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $data }}
+    <section class="profile-header">
+      <div class="cover" style="background-image: url('{{ $data.cover }}')"></div>
+      <div class="avatar">
+        <img src="{{ $data.avatar }}" alt="{{ $data.name }}">
+      </div>
+      <div class="info">
+        <h1>{{ $data.name }}</h1>
+        <p title="Designation" class="designation">{{ $data.designation }}</p>
+        <p class="">{{ $data.about }}</p>
+        <div class="socials">
+          {{ with $data.social.github }}
+          <a href="https://github.com/{{ . }}" class="social-icon" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          {{ end }}
+          {{ with $data.social.telegram }}
+          <a href="https://t.me/{{ . }}" class="social-icon" target="_blank" aria-label="Telegram">
+            <i class="fab fa-telegram"></i>
+          </a>
+          {{ end }}
+          <a href="{{ $data.website }}" class="social-icon" target="_blank" aria-label="Website">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="author-posts">
+      {{ range where (where site.RegularPages "Params.author" $inputAuthor) "RelPermalink" "ne" .RelPermalink }}
+        <div class="post-card">
+          <div class="post-card-header">
+            <img src="{{ $data.avatar }}" alt="Profile" class="profile-pic">
+            <div class="user-info">
+              <h3 class="name">{{ $data.name }}</h3>
+              <p class="time">{{ .Date.Format "Jan 2, 2006" }}</p>
+            </div>
+          </div>
+          <div class="post-card-body">
+            <a href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3></a>
+            <p>{{ .Summary }}</p>
+          </div>
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+</main>
+{{ end }}
