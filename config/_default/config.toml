@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = ""
+baseURL = "https://deenkode.github.io/blog/"
 languageCode = "en-us"
 title = "Deenkode"
 theme = "hugo-theme-stack"
