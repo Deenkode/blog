@@ -49,7 +49,7 @@
 
           <span class="article-author">
             {{ if $slug }}
-              <a href="blog/author/{{ $slug }}/">{{ $author }}</a>
+              <a href="{{ (printf "author/%s/" $slug) | relURL }}">{{ $author }}</a>
             {{ else }}
               {{ $author }}
             {{ end }}
