@@ -1,24 +1,24 @@
-.profile {
+[data-scheme=light] .profile {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
   max-width: 900px;
   padding: 1rem;
 }
 
-.profile-header {
+[data-scheme=light] .profile-header {
   position: relative;
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.cover {
+[data-scheme=light] .cover {
   height: 200px;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
 }
 
-.avatar {
+[data-scheme=light] .avatar {
   position: absolute;
   top: 130px;
   left: 50%;
@@ -30,22 +30,24 @@
   overflow: hidden;
 }
 
-.avatar img {
+[data-scheme=light] .avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.info {
+[data-scheme=light] .info {
   margin-top: 80px;
+  color: #111111;
 }
 
-.info h1 {
+[data-scheme=light] .info h1 {
   margin-bottom: 0.5rem;
   font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
 }
 
-.designation {
+[data-scheme=light] .designation {
   font-weight: bold;
   background-color: #31473A;
   display: inline-block;
@@ -56,7 +58,7 @@
   font-size: 13px;
 }
 
-.socials {
+[data-scheme=light] .socials {
   display: flex;
   gap: 10px;
   margin-top: 10px;
@@ -64,7 +66,7 @@
   align-items: center;
 }
 
-.social-icon {
+[data-scheme=light] .social-icon {
   display: inline-flex;
   width: 30px;
   height: 30px;
@@ -78,12 +80,12 @@
   transition: background 0.3s ease;
 }
 
-.social-icon:hover {
+[data-scheme=light] .social-icon:hover {
   background-color: #E58800;
   color: #F2F2F2;
 }
 
-.post-card {
+[data-scheme=light] .post-card {
   max-width: 500px;
   margin: 20px auto;
   background-color: #ffffff;
@@ -92,19 +94,20 @@
   padding: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: transform 0.2s ease;
+  color: #050505;
 }
 
-.post-card:hover {
+[data-scheme=light] .post-card:hover {
   transform: translateY(-3px);
 }
 
-.post-card-header {
+[data-scheme=light] .post-card-header {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
 
-.profile-pic {
+[data-scheme=light] .profile-pic {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -113,7 +116,7 @@
   border: 2px solid #ffffff;
 }
 
-.user-info .name {
+[data-scheme=light] .user-info .name {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
@@ -121,16 +124,158 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.user-info .time {
+[data-scheme=light] .user-info .time {
   margin: 0;
   font-size: 13px;
   color: #606770;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-card-body p {
+[data-scheme=light] .post-card-body p {
   margin: 0;
   font-size: 15px;
   color: #050505;
+  line-height: 1.6;
+}
+
+[data-scheme=dark] .profile {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 1rem;
+  color: #eeeeee;
+}
+
+[data-scheme=dark] .profile-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+[data-scheme=dark] .cover {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  filter: brightness(0.7);
+}
+
+[data-scheme=dark] .avatar {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #eeeeee;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+[data-scheme=dark] .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-scheme=dark] .info {
+  margin-top: 80px;
+  color: #eeeeee;
+}
+
+[data-scheme=dark] .info h1 {
+  margin-bottom: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eeeeee;
+}
+
+[data-scheme=dark] .designation {
+  font-weight: bold;
+  background-color: #4b6a57;
+  display: inline-block;
+  padding: 0.9rem 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  color: #d9f0d9;
+  font-size: 13px;
+}
+
+[data-scheme=dark] .socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-scheme=dark] .social-icon {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #616161;
+  color: #eeeeee;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+[data-scheme=dark] .social-icon:hover {
+  background-color: #e5b95c;
+  color: #222831;
+}
+
+[data-scheme=dark] .post-card {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #424242;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.2s ease;
+  color: #eeeeee;
+}
+
+[data-scheme=dark] .post-card:hover {
+  transform: translateY(-3px);
+}
+
+[data-scheme=dark] .post-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+[data-scheme=dark] .profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  border: 2px solid #eeeeee;
+}
+
+[data-scheme=dark] .user-info .name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #d0d0d0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+[data-scheme=dark] .user-info .time {
+  margin: 0;
+  font-size: 13px;
+  color: #b0b0b0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+[data-scheme=dark] .post-card-body p {
+  margin: 0;
+  font-size: 15px;
+  color: #cccccc;
   line-height: 1.6;
 }
