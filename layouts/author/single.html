@@ -48,7 +48,7 @@
           </div>
           <div class="post-card-body">
             <a href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3></a>
-            <p>{{ .Summary }}</p>
+            <p>{{ .Summary | plainify | truncate 200 }}</p>
           </div>
         </div>
       {{ end }}
